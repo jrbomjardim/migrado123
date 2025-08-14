@@ -56,9 +56,7 @@
 - [ ] Ranking de usuários
 
 ### 🗄️ Banco de Dados MySQL
-- [ ] Conectar ao banco de dados MySQL remoto
-- [ ] Criar tabelas: usuários, flashcards, categorias, pagamentos, seguidas, publicações
-- [ ] Implementar relacionamentos entre tabelas
+- implementar o banco de dados (tabelas por completo)
 - [ ] Inserir dados de exemplo para testes
 - [ ] Otimização de consultas
 
@@ -69,17 +67,12 @@
 - [x] Criar script de deploy automático (deploy.sh)
 - [x] Criar documentação completa (DEPLOY.md)
 - [x] Atualizar README.md com informações detalhadas
-- [ ] Configurar ambiente de produção na Hostinger
-- [ ] Executar script SQL no banco de dados
+
 - [ ] Testes de funcionalidade completos
 - [ ] Backup e recuperação de dados
 
 ### 📋 Próximos Passos Prioritários
-- [ ] Criar páginas HTML para login, registro e dashboard
-- [ ] Desenvolver CSS moderno e responsivo
-- [ ] Implementar JavaScript para interações
-- [ ] Configurar conexão com banco MySQL remoto
-- [ ] Desenvolver sistema PHP de autenticação
+
 - [ ] Implementar CRUD de flashcards
 - [ ] Integrar sistema de pagamento Mercado Pago
 
