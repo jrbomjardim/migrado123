@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedFlash - Estudos por Flashcard</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>MedFlash</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#features" class="nav-link">Recursos</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="login.html" class="nav-link login-btn">Entrar</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Revolucione seus estudos em <span class="highlight">Medicina</span>
+                </h1>
+                <p class="hero-description">
+                    Aprenda de forma eficiente com flashcards inteligentes. Memorize conceitos médicos complexos com nossa metodologia baseada em repetição espaçada.
+                </p>
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Começar Agora
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="flashcard-demo">
+                    <div class="card card-front">
+                        <h3>Qual é a função do coração?</h3>
+                        <div class="card-flip-hint">
+                            <i class="fas fa-sync-alt"></i>
+                            Clique para ver a resposta
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher o MedFlash?</h2>
+                <p>Ferramentas poderosas para maximizar seu aprendizado</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Repetição Espaçada</h3>
+                    <p>Algoritmo inteligente que otimiza o tempo de revisão baseado na sua performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progresso Detalhado</h3>
+                    <p>Acompanhe seu desempenho com estatísticas completas e relatórios de progresso</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Conteúdo Colaborativo</h3>
+                    <p>Acesse flashcards criados por outros estudantes e professores de medicina</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Estude em Qualquer Lugar</h3>
+                    <p>Interface responsiva que funciona perfeitamente em desktop, tablet e smartphone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre o MedFlash</h2>
+                    <p>O MedFlash foi desenvolvido especificamente para estudantes de medicina que buscam uma forma mais eficiente de memorizar e revisar conteúdos complexos.</p>
+                    <p>Nossa plataforma utiliza técnicas comprovadas de aprendizado, como a repetição espaçada, para garantir que você retenha informações por mais tempo e com menos esforço.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>10k+</h3>
+                            <p>Flashcards disponíveis</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Taxa de aprovação</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Disponibilidade</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-brain"></i>
+                    <span>MedFlash</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacidade</a>
+                    <a href="#terms">Termos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedFlash. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MedFlash</title>
+    <link rel="stylesheet" href="src/css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-brand">
+                <i class="fas fa-brain"></i>
+                <span>MedFlash</span>
+            </div>
+            <div class="auth-illustration">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Clínica Médica</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-user-md"></i>
+                        <span>Cirurgia</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-baby"></i>
+                        <span>Pediatria</span>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-info">
+                <h2>Comece sua jornada!</h2>
+                <p>Junte-se a milhares de estudantes que já revolucionaram seus estudos em medicina.</p>
+                <div class="stats-mini">
+                    <div class="stat-item">
+                        <strong>10k+</strong>
+                        <span>Flashcards</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>95%</strong>
+                        <span>Aprovação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-right">
+            <div class="auth-form-container">
+                <div class="auth-header">
+                    <h1>Criar sua conta</h1>
+                    <p>Comece seu teste gratuito agora mesmo</p>
+                </div>
+                
+                <form class="auth-form" id="registerForm" action="src/php/register.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nome</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="Seu nome" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Sobrenome</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="Seu sobrenome" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required>
+                            <button type="button" class="password-toggle" onclick="togglePassword('password')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-bar">
+                                <div class="strength-fill"></div>
+                            </div>
+                            <span class="strength-text">Força da senha</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmar Senha</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required>
+                            <button type="button" class="password-toggle" onclick="togglePassword('confirmPassword')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="university">Universidade (opcional)</label>
+                        <div class="input-group">
+                            <i class="fas fa-graduation-cap"></i>
+                            <input type="text" id="university" name="university" placeholder="Sua universidade">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="semester">Período/Ano (opcional)</label>
+                        <div class="input-group">
+                            <i class="fas fa-calendar"></i>
+                            <select id="semester" name="semester">
+                                <option value="">Selecione seu período</option>
+                                <option value="1">1º Período</option>
+                                <option value="2">2º Período</option>
+                                <option value="3">3º Período</option>
+                                <option value="4">4º Período</option>
+                                <option value="5">5º Período</option>
+                                <option value="6">6º Período</option>
+                                <option value="7">7º Período</option>
+                                <option value="8">8º Período</option>
+                                <option value="9">9º Período</option>
+                                <option value="10">10º Período</option>
+                                <option value="11">11º Período</option>
+                                <option value="12">12º Período</option>
+                                <option value="residente">Residente</option>
+                                <option value="medico">Médico</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                            Aceito os <a href="terms.html" target="_blank">Termos de Uso</a> e <a href="privacy.html" target="_blank">Política de Privacidade</a>
+                        </label>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="newsletter">
+                            <span class="checkmark"></span>
+                            Quero receber dicas de estudo e novidades por email
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-rocket"></i>
+                        Criar Conta Gratuita
+                    </button>
+                    
+                    <div class="divider">
+                        <span>ou</span>
+                    </div>
+                    
+                    <button type="button" class="btn btn-google">
+                        <i class="fab fa-google"></i>
+                        Continuar com Google
+                    </button>
+                </form>
+                
+                <div class="auth-footer">
+                    <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Criando sua conta...</p>
+        </div>
+    </div>
+    
+    <script src="src/js/auth.js"></script>
+</body>
+</html>
+
